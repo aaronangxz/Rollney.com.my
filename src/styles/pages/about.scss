@@ -1,0 +1,213 @@
+/* about page */
+.about-container {
+  .about-wrapper {
+    width: calc(100vw - 20vw) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    @include respond(tab-port) {
+      width: calc(100vw - 10vw) !important;
+    }
+  }
+  .section-banner {
+    position: relative;
+    margin-bottom: 8rem;
+
+    img {
+      width: 100vw;
+    }
+
+    .title {
+      font-family: "Renogare";
+      letter-spacing: 1rem;
+      color: white;
+      font-size: 3rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .section-intro {
+    margin-bottom: 12rem;
+    .txt-right {
+      text-align: right;
+    }
+    .ls {
+      letter-spacing: 2rem !important;
+      @include respond(tab-port) {
+        letter-spacing: 1.2rem !important;
+      }
+    }
+    .title {
+      font-family: "Infinity";
+      color: #563318;
+      font-size: 14rem;
+      line-height: 8rem;
+      margin: 0;
+    }
+    .title2 {
+      font-family: "Renogare";
+      font-size: 8rem;
+      color: #fbbb86;
+      margin: 0;
+      letter-spacing: 0.8rem;
+
+      @include respond(tab-port) {
+        font-size: 5rem;
+      }
+    }
+    .details {
+      font-size: 1.5rem;
+      letter-spacing: 0.3rem;
+      text-align: justify;
+      color: #563318;
+    }
+    .two-item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 4rem;
+      grid-column-gap: 2rem;
+
+      @include respond(tab-port) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+    .mobile {
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+
+    .desktop {
+      display: none;
+      @include respond(tab-port) {
+        display: inherit;
+      }
+    }
+
+    .mb-4 {
+      margin-bottom: 4rem;
+    }
+  }
+
+  .desktop {
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  .mobile {
+    display: none;
+    @include respond(tab-port) {
+      display: inherit;
+    }
+  }
+
+  .section-journey {
+    text-align: center;
+    margin-bottom: 12rem;
+
+    .txt-right {
+      text-align: right;
+    }
+
+    .txt-left {
+      text-align: left;
+    }
+
+    .flt-right {
+      float: right;
+    }
+
+    .flt-left {
+      float: left;
+    }
+
+    .title {
+      font-family: "Megante";
+      color: #563318;
+      font-size: 2.4rem;
+      margin: 0;
+      letter-spacing: 0.24rem;
+    }
+
+    .content {
+      margin-top: 6rem;
+      color: #563318;
+      font-size: 1.5rem;
+      letter-spacing: 0.4rem;
+      text-align: justify;
+      width: 40rem;
+
+      @include respond(tab-port) {
+        width: auto;
+      }
+    }
+
+    .journey {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      // grid-column-gap: 2rem;
+      // margin-bottom: 40px;
+
+      @include respond(tab-port) {
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 5rem 0;
+      }
+
+      div:first-child {
+        border-right: 1px solid #563318;
+        padding-right: 4rem;
+        padding-bottom: 4rem;
+
+        @include respond(tab-port) {
+          padding: 0;
+          border: none;
+        }
+      }
+
+      div:nth-child(2) {
+        padding-left: 4rem;
+        padding-bottom: 4rem;
+
+        @include respond(tab-port) {
+          padding: 0;
+        }
+      }
+
+      div {
+        img {
+          height: 22rem;
+          margin: 1rem auto;
+
+          @include respond(tab-port) {
+            height: 11rem;
+          }
+        }
+        .imgRight {
+          -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 82% 100%);
+          clip-path: polygon(0 100%, 0 0, 100% 0, 82% 100%);
+          @include respond(tab-port) {
+            height: 22rem;
+            clip-path: none;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .imgLeft {
+          -webkit-clip-path: polygon(18% 100%, 0 0, 100% 0, 100% 100%);
+          clip-path: polygon(18% 100%, 0 0, 100% 0, 100% 100%);
+          @include respond(tab-port) {
+            height: 22rem;
+            clip-path: none;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

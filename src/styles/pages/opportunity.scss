@@ -1,0 +1,95 @@
+.opp-container {
+  .section-banner {
+    position: relative;
+    margin-bottom: 8rem;
+
+    img {
+      width: 100vw;
+    }
+
+    .title {
+      font-family: "Renogare";
+      letter-spacing: 1rem;
+      color: white;
+      font-size: 3rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      @include respond(tab-port) {
+        title: 2rem;
+      }
+    }
+  }
+  .section-apply {
+    text-align: center;
+    @include respond(tab-port) {
+      margin: 2rem;
+    }
+
+    .title-container {
+      margin-bottom: 3rem;
+    }
+
+    .subtitle-container {
+      padding: 3rem 0px;
+    }
+
+    .contact-container {
+      margin-bottom: 8rem;
+      p {
+        font-family: "Montserrat";
+        font-size: 1.8rem;
+        color: #563318;
+        margin: 0;
+        letter-spacing: 0.4rem;
+        margin-bottom: 1.5rem;
+
+        @include respond(tab-port) {
+          font-size: 1.4rem;
+          letter-spacing: 0.1rem;
+        }
+
+        span {
+          font-weight: 700;
+          font-size: 2rem;
+          @include respond(tab-port) {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+
+    .title {
+      font-family: "Megante";
+      color: #563318;
+      font-size: 3rem;
+      font-weight: 800;
+      margin: 0;
+      letter-spacing: 0.4rem;
+      @include respond(tab-port) {
+        font-size: 2.4rem;
+      }
+    }
+
+    .subtitle {
+      font-family: "Montserrat";
+      font-size: 1.8rem;
+      color: #563318;
+      margin: 0;
+      letter-spacing: 0.4rem;
+      margin-bottom: 1.5rem;
+
+      @include respond(tab-port) {
+        font-size: 1.6rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+
+    button {
+      margin: 4rem 0 40rem 0;
+    }
+  }
+}

@@ -1,0 +1,211 @@
+.menu-container {
+  position: relative;
+  .menu-wrapper {
+    width: calc(100vw - 20vw) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    @include respond(tab-port) {
+      width: calc(100vw - 5vw) !important;
+    }
+  }
+  .section-banner {
+    position: relative;
+    z-index: 2;
+    // height: 160rem;
+
+    img {
+      width: 100vw;
+      object-fit: cover;
+    }
+
+    .title {
+      font-family: "Renogare";
+      letter-spacing: 1rem;
+      color: white;
+      font-size: 3rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
+    }
+  }
+  .section-wrapper {
+    height: 60rem;
+  }
+  .desktop {
+    display: block;
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+  .section-intro {
+    background: url(/images/menu/curvebg.png) no-repeat scroll center 100%;
+    background-position-y: top;
+    padding-top: 33rem;
+    background-size: cover;
+
+    // width: 100%;
+    position: absolute;
+    top: 60rem;
+
+    /* For Screen Higher than 1400px */
+    @media screen and (min-width: 1600px) {
+      padding-top: 52rem;
+      top: 64rem;
+      width: 100vw;
+    }
+
+    .two-item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 2rem;
+    }
+
+    .intro {
+      margin-top: 10rem;
+    }
+
+    .title {
+      font-family: "Megante";
+      color: #563318;
+      font-size: 9rem;
+      margin: 0;
+      letter-spacing: 0.4rem;
+      margin-left: 16rem;
+    }
+
+    .details {
+      font-family: "Megante";
+      color: #563318;
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+      text-align: justify;
+      margin-left: 16rem;
+    }
+
+    .image-list {
+      .image-left {
+        height: 50rem;
+      }
+    }
+  }
+  .section-list {
+    text-align: center;
+
+    .list {
+      margin: 4rem 0px;
+    }
+
+    .sub-container {
+      display: inline-block;
+    }
+
+    .sub-head {
+      font-family: "Megante";
+      color: #563318;
+      font-size: 2rem;
+      margin: 0;
+      letter-spacing: 0.4rem;
+    }
+
+    .sub-content {
+      font-family: "Megante";
+      color: #563318;
+      font-size: 1rem;
+      letter-spacing: 0.2rem;
+    }
+
+    .doodle {
+      height: 12rem;
+      vertical-align: middle;
+      margin: 0 2rem;
+    }
+
+    .zoom-size {
+      // zoom: 65%;
+      transform: scale(0.75);
+
+      @include respond(tab-port) {
+        // zoom: 45%;
+        scale: 0.45;
+      }
+    }
+
+    .two-item {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+
+      @include respond(tab-port) {
+        grid-template-columns: none;
+      }
+
+      .left {
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        img {
+          height: 50rem;
+          @include respond(tab-port) {
+            height: 40rem;
+          }
+        }
+        .cinamon-menu {
+          height: 27rem;
+          @include respond(tab-port) {
+            height: 20rem;
+          }
+        }
+        .frappe-menu {
+          height: 40rem;
+          @include respond(tab-port) {
+            height: 33rem;
+          }
+        }
+      }
+
+      .sub-title {
+        font-family: "Megante";
+        color: #563318;
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+      }
+
+      .right-list {
+        .mobile-3 {
+          @include respond(tab-port) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+        .mobile-2 {
+          @include respond(tab-port) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+        .inline-b {
+          display: inline-block;
+          margin: 0.1rem 0.8rem;
+        }
+        img {
+          height: 30rem;
+          @include respond(tab-port) {
+            height: 25rem;
+          }
+        }
+        .sub-span {
+          font-family: "Megante";
+          color: #563318;
+          font-size: 1.5rem;
+          letter-spacing: 0.2rem;
+          display: table;
+          margin: 1rem auto;
+        }
+      }
+    }
+  }
+}

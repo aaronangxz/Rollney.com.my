@@ -1,0 +1,128 @@
+/* Footer */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 2.5rem;
+  .wrapper {
+    width: 100vw;
+    background-color: #f0decf;
+
+    .logo-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+      @include respond(tab-port) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .text-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      @include respond(tab-port) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .left {
+      padding: 4rem 4rem 0.5rem 4rem;
+
+      @include respond(tab-port) {
+        text-align: center;
+        padding: 1rem 1rem 0.5rem 1rem;
+      }
+
+      .top {
+        a {
+          align-items: center;
+          display: flex;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .right {
+      text-align: right;
+      padding: 4rem 0rem 0.5rem 4rem;
+
+      @include respond(tab-port) {
+        text-align: center;
+        padding: 1rem 1rem 0.5rem 1rem;
+      }
+    }
+
+    .left-text {
+      padding: 0.5rem 4rem 4rem 4rem;
+      @include respond(tab-port) {
+        text-align: center;
+      }
+    }
+
+    .right-text {
+      text-align: right;
+      padding: 0.5rem 4rem 4rem 4rem;
+
+      @include respond(tab-port) {
+        // text-align: center;
+        display: none;
+      }
+    }
+  }
+}
+
+.footer-text {
+  font-family: "Montserrat";
+  letter-spacing: 4px;
+  color: black;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-column-gap: 1rem;
+
+  .logo {
+    height: 10rem;
+  }
+}
+
+.social-list {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1.5fr 4fr;
+
+  @include respond(tab-port) {
+    grid-template-columns: 1.5fr 5fr;
+  }
+}
+
+.social-name {
+  font-family: "Montserrat";
+  letter-spacing: 1px;
+  color: #563318;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.social-image {
+  height: 4rem;
+}
+
+.tv3 {
+  height: 7rem;
+
+  @include respond(tab-port) {
+    height: 4rem;
+  }
+}
+
+.tv2 {
+  height: 8rem;
+  @include respond(tab-port) {
+    height: 5rem;
+  }
+}

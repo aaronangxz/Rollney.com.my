@@ -1,0 +1,50 @@
+.events-container {
+  .section-banner {
+    position: relative;
+    margin-bottom: 8rem;
+
+    img {
+      width: 100vw;
+    }
+
+    .title {
+      font-family: "Renogare";
+      letter-spacing: 1rem;
+      color: white;
+      font-size: 3rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .section-eventlist {
+    text-align: center;
+
+    img {
+      width: 80vw;
+    }
+
+    .txt-right {
+      text-align: right;
+      width: 80vw;
+      margin: 0 auto;
+    }
+
+    .title {
+      color: #563318;
+      font-size: 2.5rem;
+      margin: 4rem 0;
+      letter-spacing: 0.35rem;
+    }
+
+    .details {
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 3px;
+      font-weight: 200;
+      text-align: justify;
+      margin-bottom: 40px;
+    }
+  }
+}
